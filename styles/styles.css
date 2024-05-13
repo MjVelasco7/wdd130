@@ -24,7 +24,7 @@ main img {
 }
 aside h2 {
   position: absolute;
-  top: 50%; /* Position the text halfway down the container */
+  top: 20%; /* Position the text halfway down the container */
   left: 50%; /* Position the text halfway across the container */
   transform: translate(-50%, -50%); /* Center the text horizontally and vertically */
   color: white; /* Adjust text color for better visibility */
