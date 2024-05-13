@@ -1,4 +1,36 @@
 
+/* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Class Selectors */
+.box {
+  margin: 1rem;
+  border: 1px solid rgba(0,0,0,.1);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
+}
+aside {
+  width: 20em;
+  text-align: center;
+  position: relative;
+}
+main img {
+  float: right;
+}
+aside h2 {
+  position: absolute;
+  top: 13%; /* Position the text halfway down the container */
+  left: 50%; /* Position the text halfway across the container */
+  transform: translate(-50%, -50%); /* Center the text horizontally and vertically */
+  color: white; /* Adjust text color for better visibility */
+}
+/* End of Class Selectors */
+
 nav {
   background-color: steelblue;
   padding: 10px;
