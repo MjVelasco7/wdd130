@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=YourSelectedFont&display=swap');
+
+:root {
+    --primary-color: #336699;
+    --secondary-color: #99ccff;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'YourSelectedFont', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fefeff;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: #fff;
+}
+
+.hero article img {
+    float: right;
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    margin: 0 5px;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+}
+
+footer a img {
+    border: none;
+}
