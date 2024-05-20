@@ -16,13 +16,27 @@ body {
 header {
     background-color: var(--primary-color);
     color: #fff;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
 
+.header-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
 header img {
-    width: 150px;
+    max-width: 180%;
     height: auto;
+    width: 160px; /* Size of second image */
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
 }
 
 nav a {
@@ -37,46 +51,110 @@ main {
     padding: 20px;
 }
 
-.hero {
-    position: relative;
+.mission-section {
+    margin-bottom: 50px; /* space between grid pictrue/otavalo  and history */
+}
+.mission-grid img {
+    max-width: 100%;
+    height: auto;
+    width: 200px; /* Size of second image */
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+.mission-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
 }
 
-.hero img {
-    display: block;
-    width: 100%;
+.mission-text {
+    color: #615a5a;
+    text-align: center;
+}
+
+.mission-text h1 {
+    margin-top: 0; 
+}
+
+.about-section {
+    margin-bottom: 50px; /* space between history and the grid 3 division */
+}
+
+.grid-section {
+    margin-bottom: 50px; /* space between the grid 3 division and Adventures Awaitings You*/
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    max-width: 70%;  /*size in generall of history image */
     height: auto;
 }
 
-.hero h1 {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fefeff;
-}
-
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    color: #fff;
-}
-
-.hero article img {
-    float: right;
-    width: 100px;
-    height: auto;
-    margin-left: 10px;
-}
-
-section {
+.adventures-section {
     margin-bottom: 20px;
 }
 
 h2 {
     color: var(--primary-color);
+}
+
+.adventure-images {
+    display: flex;
+    overflow-x: auto;
+}
+
+figure {
+    margin-right: 20px;
+}
+
+figure img {
+    max-width: 145%;  /*size in generall in the grid of all 5 images*/
+    height: auto;
+}
+
+
+/* Adjust size of rafting images */
+.rafting-image1 img {
+    width: 350px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.rafting-image2 img {
+    width: 350px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.rafting-image3 img {
+    width: 350px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.rafting-image4 img {
+    width: 220px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    place-items: center; 
+}
+
+
+.rafting-image5 img {
+    width: 450px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+figure figcaption {
+    text-align: center;
+    margin-top: 5px;
 }
 
 footer {
@@ -90,15 +168,17 @@ footer p {
     margin: 10px 0;
 }
 
-footer a {
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icons a {
     margin: 0 5px;
 }
 
-footer img {
+.social-icons img {
     width: 30px;
     height: 30px;
-}
-
-footer a img {
     border: none;
 }
